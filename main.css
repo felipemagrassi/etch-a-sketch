@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.config {
+    width:200px;
+    display:flex;
+    margin: 0 0 0 3em;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.config > * {
+    margin: 1em .5em;
+}
+
+input[type="number"]{
+    width: 3em;
+    margin: 0 .5em;
+}
+
+.colorful,
+.blocks {
+    display:flex;
+    flex-direction: row;
+}
+
+input[type='image'] {
+    width: 4em;
+}
+
+.grid {
+    margin: 3em 3em 3em 6em;
+    display: grid;
+    width: 60vw;
+    height: 80vh;
+    background-color: black;
+}
+
+
+@media screen and (orientation:portrait) {
+    main {
+        flex-direction: column
+    }
+    h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    .config{
+        flex-direction: row;
+        width: 50%;
+    }
+    .colorful,
+    .blocks{
+        flex-direction: column;
+    }
+}

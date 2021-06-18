@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <main>
+        <section class="config">
+            <h1 class="title">
+                Etch a Sketch
+            </h1>
+            <input class=".displayBorder" type="image" src="images/border.png" alt="border by Xinh Studio from the Noun Project">
+            <input class=".eraser" type="image" src="images/noun_eraser_2501867.png" alt="eraser by Icon Lauk from the Noun Project">
+            <div class="blocks">
+                <label for="totalBlocks">Square Size:</label>
+                <input type="number" name="totalBlocks" id="totalBlocks" value="16" min="0" max="25">    
+            </div>
+            <input type="color" name="color" id="color" value="#ff0000">
+            <div id="colorful">
+                <label for="colorfulMode">Colorful Mode</label>
+                <input type="checkbox" name="colorfulMode" id="colorfulMode">
+            </div>
+        </section>
+
+        <section class="grid">
+
+        </section>
+    </main>
+        <script src="script.js"></script>
+</body>
+</html>
